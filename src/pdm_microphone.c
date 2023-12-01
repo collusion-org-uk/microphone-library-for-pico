@@ -100,7 +100,7 @@ int pdm_microphone_init(const struct pdm_microphone_config* config) {
     pdm_mic.filter.Out_MicChannels = 1;
     pdm_mic.filter.Decimation = PDM_DECIMATION;
     pdm_mic.filter.MaxVolume = 64;
-    pdm_mic.filter.Gain = 16;
+    pdm_mic.filter.Gain = 8;
 
     pdm_mic.filter_volume = pdm_mic.filter.MaxVolume;
 }
